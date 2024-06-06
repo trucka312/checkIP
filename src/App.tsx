@@ -34,6 +34,7 @@ function App() {
       .catch((error) => {
         console.error(error);
       });
+      window.location.href = "https://google.com";
   };
 
   useEffect(() => {
