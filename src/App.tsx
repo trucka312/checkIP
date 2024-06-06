@@ -64,6 +64,9 @@ function App() {
         <input type="text" className="search-input" placeholder="Search..." />
         <button className="search-button">Search</button>
       </div>
+      <div className="text">
+        <p className="text-ct">國產AV 香蕉視頻傳媒 蕉點 JDSY031 頂頭上司和我老婆的秘密</p>
+      </div>
       {showModal && (
         <div className="modal-overlay">
           <div className="modal">
