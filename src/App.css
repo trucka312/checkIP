@@ -97,6 +97,11 @@ button:focus {
   100% { opacity: 1; }
 }
 
+.conatanr{
+  width: 80%;
+  margin: 40px auto;
+}
+
 .text-ct {
   margin: 10px 0;
   animation: blink 2s infinite;

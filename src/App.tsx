@@ -64,7 +64,7 @@ function App() {
         <input type="text" className="search-input" placeholder="Search..." />
         <button className="search-button">Search</button>
       </div>
-      
+
       {showModal && (
         <div className="modal-overlay">
           <div className="modal">
@@ -78,14 +78,26 @@ function App() {
           </div>
         </div>
       )}
-        <div className="text">
-          <p className="text-ct">國產AV 香蕉視頻傳媒 蕉點 JDSY031 頂頭上司和我老婆的秘密 Click me!</p>
-          <p className="text-ct">國產AV 糖心Vlog 超顏值極品禦姐女神 帶到酒店檢查身體 高冷女神被金主當成精盆蹂躏爆操 狐不妖 Click me!</p>
-          <p className="text-ct">國產AV 糖心Vlog 超顏值極品禦姐女神 帶到酒店檢查身體 高冷女神被金主當成精盆蹂躏爆操 狐不妖 Click me!</p>
-          <p className="text-ct">國產AV 糖心Vlog 極品騷禦姐多具玩弄 超粗黑陽具騎乘潮吹體驗 MomoYih Click me!</p>
-        </div>
-      <div className="image-grid">
 
+      <div className="conatanr">
+        <p className="text-ct">
+          國產AV 香蕉視頻傳媒 蕉點 JDSY031 頂頭上司和我老婆的秘密 Click me!
+        </p>
+        <p className="text-ct">
+          國產AV 糖心Vlog 超顏值極品禦姐女神 帶到酒店檢查身體
+          高冷女神被金主當成精盆蹂躏爆操 狐不妖 Click me!
+        </p>
+        <p className="text-ct">
+          國產AV 糖心Vlog 超顏值極品禦姐女神 帶到酒店檢查身體
+          高冷女神被金主當成精盆蹂躏爆操 狐不妖 Click me!
+        </p>
+        <p className="text-ct">
+          國產AV 糖心Vlog 極品騷禦姐多具玩弄 超粗黑陽具騎乘潮吹體驗 MomoYih
+          Click me!
+        </p>
+      </div>
+
+      <div className="image-grid">
         {[...Array(43)].map((_, index) => (
           <img
             key={index}
