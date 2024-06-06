@@ -107,7 +107,7 @@ button:focus {
   animation: blink 2s infinite;
   margin: 10px 0;
   animation: blink 2s infinite;
-  font-size: 24px; /* Đổi kích thước chữ */
+  font-size: 24px; 
   color: #ff4081; /* Đổi màu chữ */
 }
 
