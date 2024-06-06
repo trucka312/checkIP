@@ -92,10 +92,11 @@ button:focus {
 
 /* CSS for image grid */
 .image-grid {
+  width: 80%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Thay đổi kích thước tối thiểu của các cột */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Thay đổi kích thước tối thiểu của các cột */
   gap: 20px; /* Khoảng cách giữa các ảnh */
-  margin-top: 20px;
+  margin: 50px auto 0;
 }
 
 .grid-image {
