@@ -90,6 +90,23 @@ button:focus {
   outline: none;
 }
 
+/* CSS for text animation */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.text {
+  margin-left: 20%;
+}
+
+.text-ct {
+  margin: 10px 0;
+  animation: blink 2s infinite;
+}
+
+
 /* CSS for image grid */
 .image-grid {
   width: 80%;
