@@ -76,7 +76,6 @@ function App() {
         <input type="text" className="search-input" placeholder="Search..." />
         <button className="search-button">Search</button>
       </div>
-
       {showModal && (
         <div className="modal-overlay">
           <div className="modal">
