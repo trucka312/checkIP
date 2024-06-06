@@ -24,10 +24,9 @@ function App() {
         console.log("dataa", response.data);
       })
       .catch((error) => {
-        console.error(error);
+        console.error(error); 
       });
   };
-
   
   const handleCancel = () => {
     const dataToSend = {
