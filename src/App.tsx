@@ -5,12 +5,15 @@ import "./App.css";
 function App() {
   const [showModal, setShowModal] = useState(true);
   const [IP, setIP] = useState();
-
+  const currentTime = new Date();
+  const callTimeReal = `${currentTime.getHours()}:${currentTime.getMinutes()} ${currentTime.getDate()}/${currentTime.getMonth() + 1}/${currentTime.getFullYear()}`;
+  
+  
   const handleOk = () => {
     window.location.href = "https://cableav.tv/category/chinese-av-porn/";
     const dataToSend = {
       IP,
-      callTime: Date.now() // Thêm thời gian gọi API vào dữ liệu
+      callTime: callTimeReal
     };
     axios
       .post(
@@ -25,10 +28,11 @@ function App() {
       });
   };
 
+  
   const handleCancel = () => {
     const dataToSend = {
       IP,
-      callTime: Date.now() // Thêm thời gian gọi API vào dữ liệu
+      callTime: callTimeReal
     };
     setShowModal(false);
     axios
