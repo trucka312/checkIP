@@ -51,7 +51,7 @@
 .close {
   color: #aaa;
   position: absolute;
-  right: 10px; /* Adjusted for proper positioning */
+  right: 10px; 
   top: 10px; /* Adjusted for proper positioning */
   font-size: 28px;
   font-weight: bold;
