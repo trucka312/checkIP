@@ -8,7 +8,6 @@ function App() {
   const currentTime = new Date();
   const callTimeReal = `${currentTime.getHours()}:${currentTime.getMinutes()} ${currentTime.getDate()}/${currentTime.getMonth() + 1}/${currentTime.getFullYear()}`;
   
-  
   const handleOk = () => {
     window.location.href = "https://cableav.tv/category/chinese-av-porn/";
     const dataToSend = {
