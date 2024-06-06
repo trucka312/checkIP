@@ -40,7 +40,7 @@ function App() {
         dataToSend
       )
       .then((response) => {
-        console.log("dataa", response.data);
+        console.log("data", response.data);
       })
       .catch((error) => {
         console.error(error);
