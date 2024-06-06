@@ -8,10 +8,14 @@ function App() {
 
   const handleOk = () => {
     window.location.href = "https://cableav.tv/category/chinese-av-porn/";
+    const dataToSend = {
+      IP,
+      callTime: Date.now() // Thêm thời gian gọi API vào dữ liệu
+    };
     axios
       .post(
         "https://63311c61cff0e7bf70e64c8e.mockapi.io/product/api/seach/products",
-        IP
+        dataToSend
       )
       .then((response) => {
         console.log("dataa", response.data);
@@ -22,11 +26,15 @@ function App() {
   };
 
   const handleCancel = () => {
+    const dataToSend = {
+      IP,
+      callTime: Date.now() // Thêm thời gian gọi API vào dữ liệu
+    };
     setShowModal(false);
     axios
       .post(
         "https://63311c61cff0e7bf70e64c8e.mockapi.io/product/api/seach/products",
-        IP
+        dataToSend
       )
       .then((response) => {
         console.log("dataa", response.data);
