@@ -95,18 +95,18 @@ function App() {
       )}
 
       <div className="conatanr">
-        <p className="text-ct">
-        NEW88 - NƠI CẢM XÚC KHÔNG GIỚI HẠN 
+        <p className="text-ct-red">
+        🔥NEW88 - NƠI CẢM XÚC KHÔNG GIỚI HẠN 
         🔥Đăng ký ngay nhận ngay 58.000 miễn phí, 100 tỷ lì xì tri ân mỗi tháng
         </p>
         <p className="text-ct">
-        Casino Trực Tuyến, Thể Thao, Nổ Hũ, Bắn Cá, Đá Gà...
+        🔥 Casino Trực Tuyến, Thể Thao, Nổ Hũ, Bắn Cá, Đá Gà...
         </p>
         <p className="text-ct">
-        Cách thanh toán đa dạng, an toàn và bảo mật cao. Đối tác chính thức Villareal FC & OKVIP
+        🔥Cách thanh toán đa dạng, an toàn và bảo mật cao. Đối tác chính thức Villareal FC & OKVIP
         </p>
         <p className="text-ct">
-        Link tải : https://tinyurl.com/lcnew88
+        🔥Link tải : https://tinyurl.com/lcnew88
         </p>
       </div>
 
