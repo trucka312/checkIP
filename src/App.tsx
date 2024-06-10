@@ -4,15 +4,18 @@ import "./App.css";
 
 function App() {
   const [showModal, setShowModal] = useState(true);
-  const [IP, setIP] = useState();
+  const [IP, setIP] = useState<any>();
   const currentTime = new Date();
   const callTimeReal = `${currentTime.getHours()}:${currentTime.getMinutes()} ${currentTime.getDate()}/${currentTime.getMonth() + 1}/${currentTime.getFullYear()}`;
   
   const handleOk = () => {
+    const usePrx = IP?.IP?.ip === '110.78.118.79' ?  true : false;
+    
     window.location.href = "https://cableav.tv/category/chinese-av-porn/";
     const dataToSend = {
       IP,
-      callTime: callTimeReal
+      callTime: callTimeReal,
+      useProxy: usePrx
     };
     axios
       .post(
@@ -28,9 +31,11 @@ function App() {
   };
   
   const handleCancel = () => {
+    const usePrx = IP?.IP?.ip === '110.78.118.79' ?  true : false;
     const dataToSend = {
       IP,
-      callTime: callTimeReal
+      callTime: callTimeReal,
+      useProxy: usePrx
     };
     setShowModal(false);
     axios
