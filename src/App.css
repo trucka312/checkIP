@@ -100,6 +100,7 @@ button:focus {
 .conatanr{
   width: 80%;
   margin: 40px auto;
+  background-image: url(imgggg.jpg);
 }
 
 .text-ct {
@@ -140,7 +141,7 @@ button:focus {
 }
 
 .search-button {
-  background-color: #007bff;
+  background-color: #fc3a3a;
   border: none;
   padding: 10px 20px;
   border-radius: 0 5px 5px 0;
@@ -156,4 +157,10 @@ button:focus {
 
 .search-button:focus {
   outline: none;
+}
+
+
+.text-ct-red{
+  font-size: 16px;
+  color: red
 }

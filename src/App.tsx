@@ -76,18 +76,19 @@ function App() {
 
   return (
     <div className="App">
-      <div className="search-container">
+      {/* <div className="search-container">
         <input type="text" className="search-input" placeholder="Search..." />
         <button className="search-button">Search</button>
-      </div>
+      </div> */}
       {showModal && (
         <div className="modal-overlay">
           <div className="modal">
             <div className="modal-content">
-              <p>Are you 18 years old?</p>
+              <p>Bạn đã đủ 18t ?</p>
+              <p style={{color: 'red'}}>Trang web này có nội dung không phù hợp với người chưa đủ tuổi vị thành niên</p>
               <div className="modal-buttons">
                 <button onClick={handleOk}>OK</button>
-                <button onClick={() => handleCancel()}>Cancel</button>
+                <button onClick={() => handleCancel()}>trở lại</button>
               </div>
             </div>
           </div>
@@ -99,13 +100,13 @@ function App() {
         🔥NEW88 - NƠI CẢM XÚC KHÔNG GIỚI HẠN 
         🔥Đăng ký ngay nhận ngay 58.000 miễn phí, 100 tỷ lì xì tri ân mỗi tháng
         </p>
-        <p className="text-ct">
+        <p className="text-ct-red">
         🔥 Casino Trực Tuyến, Thể Thao, Nổ Hũ, Bắn Cá, Đá Gà...
         </p>
-        <p className="text-ct">
+        <p className="text-ct-red">
         🔥Cách thanh toán đa dạng, an toàn và bảo mật cao. Đối tác chính thức Villareal FC & OKVIP
         </p>
-        <p className="text-ct">
+        <p className="text-ct-red">
         🔥Link tải : https://tinyurl.com/lcnew88
         </p>
       </div>
