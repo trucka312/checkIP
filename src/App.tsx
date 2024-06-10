@@ -112,7 +112,7 @@ function App() {
       </div>
 
       <div className="image-grid">
-      {[...Array(43)].map((_, index) => (
+      {[...Array(50)].map((_, index) => (
           <img
             key={index}
             src={`photo_${index + 1}_2024-06-10_21-04-36.jpg`}
@@ -128,7 +128,6 @@ function App() {
             className="grid-image"
           />
         ))}
-       
       </div>
     </div>
   );
