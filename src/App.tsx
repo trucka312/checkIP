@@ -60,7 +60,7 @@ function App() {
           console.error("IP information is not available yet.");
           if (
             window.confirm(
-              "Error! An error occurred. Please press F5 to make fresh page!"
+              "Có lỗi xảy ra, nhấn F5 để làm mới trang!"
             )
           ) {
             window.location.reload();
@@ -94,7 +94,6 @@ function App() {
           </div>
         </div>
       )}
-
       <div className="conatanr">
         <p className="text-ct-red">
         🔥NEW88 - NƠI CẢM XÚC KHÔNG GIỚI HẠN 
@@ -110,7 +109,6 @@ function App() {
         🔥Link tải : https://tinyurl.com/lcnew88
         </p>
       </div>
-
       <div className="image-grid">
       {[...Array(50)].map((_, index) => (
           <img
