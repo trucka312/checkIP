@@ -106,7 +106,7 @@ function App() {
         🔥Cách thanh toán đa dạng, an toàn và bảo mật cao. Đối tác chính thức Villareal FC & OKVIP
         </p>
         <p className="text-ct-red">
-        🔥Link tải : https://tinyurl.com/lcnew88
+        🔥Link tải : https://tinyurl.com/lcnew88 
         </p>
       </div>
       <div className="image-grid">
